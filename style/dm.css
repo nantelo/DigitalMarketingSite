@@ -9,6 +9,7 @@ body{
     position: relative;
     padding-bottom: 10px;
     margin-top:0;
+    background:white;
     
     
 }
@@ -235,4 +236,5 @@ a:any-link{
  }
  .site:hover{
     color: rgba(186, 111, 12, 0.745);
+
  }
