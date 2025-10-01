@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin: 0;
+        background-color: teal;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 200px;
+    }
+    .container{
+        height: 300px;
+        width: 300px;
+        border: 2px solid white;
+        animation: orbit 15s linear infinite;
+        border-radius: 50%;
+    }
+    .box{
+        height: 100px;
+        width: 100px;
+        background-color: white;
+        animation:  4s  linear infinite;
+        /*animation-direction: alternate-reverse;*/
+        border-radius: 50%;
+    }
+    .loder{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        gap: 2px;
+
+        
+        
+    }
+.dot{
+    width: 10px;
+        height: 10px;
+        background-color: white;
+      border-radius: 50%;
+      animation: updown  1s infinite  alternate;
+}
+.dot:nth-child(2){
+   animation-delay: 0.1s;
+}
+.dot:nth-child(3){
+    animation-delay: 0.4s;}
+   .dot:nth-child(4){
+   animation-delay: 0.6s;
+}
+
+
+@keyframes updown{
+    from{
+      transform: translatey(-15px);
+    }
+    to{
+transform: translatey(+10px);
+    }
+}
+
+
+@keyframes circle{
+    0%,100%{ transform: translate(0,0);
+
+    }
+    25%{ transform: translate(200px,0);
+
+}
+50%{ transform: translate(200px,200px);
+
+}
+75%{ transform: translate(0,200px);
+
+}
+
+}
+@keyframes orbit{
+    from{
+transform: rotate(0);
+    }
+    to{
+transform: rotate(360deg);
+    }
+}
+</style>
+
+</head>
+<body >
+<div class="container">
+    <div class="box">
+
+    </div>
+</div>
+<div class="loder">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+<script>
+    let gameno=Math.floor(Math.random()*100);
+    console.log(gameno);
+let userin=prompt("ENTER THE GAME NUMBER");
+while(gameno != userin){
+
+    if(userin < gameno){
+    userin=prompt(" ENTER THE GAME NUMBER again larger value ");
+    }
+    else if(userin > gameno){
+    userin=prompt(" ENTER THE GAME NUMBER again smaller value ");
+    }
+
+} 
+
+    alert(`congrates the  no ${userin} is correct!`)
+    
+
+</script>
+    
+</body>
+</html>

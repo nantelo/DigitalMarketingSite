@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wardrobe/signup</title>
+</head>
+<link rel="stylesheet" href="style/signup.css">
+<body>
+    <h1 class="top">wardrobe</h1>
+    <form class="container">
+        <div class="adjust">
+
+            <div class="sign">
+                sign up
+            </div>
+            <p>Enter name</p>
+            <input type="text" placeholder="enter name" class="name">
+            <p>Enter email</p>
+           <input type="email"  class="email"  placeholder="enter gmail">
+           <p>Enter number</p>
+           <input type="text" placeholder="enter number">
+           <p>create password</p>
+           <input type="password" placeholder=" password">
+           <p>retype password</p>
+           <input type="text" placeholder="retype">
+           
+           <button class="submitt" onclick="submit1();">submit</button>
+           
+           
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+    </form>
+    <script>
+        function submit1(){
+            const submit2=document.querySelector('.submitt');
+        const email=document.querySelector('.email');
+        
+        const name1=document.querySelector('.name');
+
+        const correctgmail=/^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+        if(name1.value===""){
+            alert("please enter your name");
+        }
+        else if(email.value===""){
+            alert(' please enter the detail to submit ');
+        }
+        else if(!correctgmail.test(email.value)){
+            alert('the email should end with @gmail.com');
+        }
+        
+         else {
+           submitt= window.open('main.html')
+         }   
+      
+        
+        
+        }
+        
+    </script>
+    
+</body>
+</html>
