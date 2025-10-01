@@ -181,7 +181,7 @@ a:any-link{
        right: 0;
        bottom: 0;
         left:0;
-       z-index: -2;
+       z-index: -1;
     }
     @media (min-aspect-ratio:16/9){
         .screen{
@@ -240,4 +240,5 @@ a:any-link{
     color: rgba(186, 111, 12, 0.745);
 
  }
+
 
