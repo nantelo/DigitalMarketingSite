@@ -9,7 +9,7 @@ body{
     position: relative;
     padding-bottom: 10px;
     margin-top:0;
-    background:white;
+    
     
     
 }
@@ -173,13 +173,15 @@ a:any-link{
     display: flex;
     align-items: center;
     justify-content:center ;
+
       
 }
     .screen{
        position: absolute;
        right: 0;
        bottom: 0;
-       z-index: -1;
+        left:0;
+       z-index: -2;
     }
     @media (min-aspect-ratio:16/9){
         .screen{
@@ -238,3 +240,4 @@ a:any-link{
     color: rgba(186, 111, 12, 0.745);
 
  }
+
